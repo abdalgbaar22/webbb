@@ -1,0 +1,11 @@
+.hom{
+    border-left: 30px;
+    background-color: blue;
+}
+.home{
+    height: 100vh;
+    background-image: url(img/ac.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative; 
+}

@@ -1,0 +1,106 @@
+body{
+    background: linear-gradient(to left,rgb(21, 115, 223),rgb(230, 218, 218),rgb(71, 247, 17));
+}
+.d1{direction: rtl;
+    background-color:rgb(16, 250, 250);
+    width: 100%;
+    overflow: auto;
+    height: 90px;
+    border-bottom: 2px solid rgb(5, 4, 5);
+    position: fixed;
+    top: 0;
+    left: 0;
+     z-index: 1;
+     opacity: 50%;
+}
+
+
+.list1{
+
+    margin-left: 450px;
+    list-style: none;
+    padding: 9px;
+    float: left;
+    margin-top: 20px;
+}
+.list1 li{
+    display: inline-block;
+    margin-left: 10px;
+} 
+.aa{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 40px;
+    color:rgb(2, 2, 2); 
+}
+.im1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-right: 10px;
+
+} 
+.d1 .list1 li>a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    display: block;
+    background-color: green; 
+    margin-top: 2px;
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px green ;
+}
+.d1 .list1 li>.aa1::after{
+    width: 100%;
+}
+.d1 .list1 li>a:hover{
+    background-color: rgb(233, 3, 3);
+    color: white ;
+
+}
+.d1 .list1 li>a:hover::after{
+    width: 100%;
+}
+
+section{
+    transform-style: preserve-3d;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transition: 2s;
+    margin-top: 100px;
+}
+
+.sec{
+    width: 50%;
+    float: left;
+}
+.front img{
+    width: 300px;
+    height: 300px;
+    margin:0 100px ;
+
+
+}
+.front , .back{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+
+}
+.front{
+    z-index: 1;
+    backface-visibility: hidden;
+}
+section:hover{
+    transform: rotatey(180deg);
+}
+.back{
+    transform: rotatey(180deg);
+    color:rgb(1, 11, 17);
+    font-size: 20px;
+}
+
+

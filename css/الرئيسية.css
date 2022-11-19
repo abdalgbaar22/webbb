@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header .icons a{
+    font-size: 2.5rem;
+    color:#fff;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+  
+  header .icons a:hover{
+    color:var(--orange);
+  }
+
+header .icons #menu-bars,
+header .icons a{
+    height:4.5rem;
+    line-height: 4.5rem;
+    width:5rem;
+    font-size: 2rem;
+    margin-right: .5rem;
+    border-radius: .5rem;
+    color:var(--red);
+    background:var(--light-red);
+    text-align: center;
+}
+
+header .icons #menu-bars:hover,
+header .icons a:hover{
+    background-color:var(--red);
+    color:rgb(56, 177, 32);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+.icons{direction: rtl;
+    background-color:cyan;
+    width: 100%;
+    overflow: auto;
+    height: 90px;
+    border-bottom: 2px solid rgb(28, 0, 128);
+    position: fixed;
+    top: 0;
+    left: 0;
+     z-index: 1;
+     opacity: 50%;
+}
+
+.list1{
+    margin-left: 450px;
+    list-style: none;
+    padding: 9px;
+    float: left;
+    margin-top: 20px;
+}
+.list1 li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.aa{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 40px;
+    color: black; 
+}
+.im1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-right: 10px;
+
+}
+.icons .list1 li>a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    display: block;
+    background-color: green; 
+    margin-top: 2px;
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px green ;
+}
+.icons .list1 li>.aa1::after{
+    width: 100%;
+}
+.icons .list1 li>a:hover{
+    background-color: rgb(15, 11, 240);
+    color:white ;
+
+}
+.icons .list1 li>a:hover::after{
+    width: 100%;
+}
+.home{
+    height: 110vh;
+    background-image: url(img/ab.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative; 
+    opacity: 5.5;
+}
+body{
+    min-height: 3000px;
+}
+.overley{
+  
+  position: absolute;
+  width: 100%;  
+  height: 100%;
+  /* background-color: black;
+  opacity:0.5 ; */
+  background-color: rgba(32, 30, 30, 0.5);
+}
+.content{
+    position: absolute;
+    width: 60%;
+/* ///////// hero image توسيط بالنسبة للصورة */
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+/* //////// */
+font-family: ali;
+
+
+}
+.p1,.t1{
+    color: white;
+    font-size: 40px;
+}
+.btn1,.btn2,.btn3,.btn4{
+   
+    width: 150px;
+    padding: 15px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(168, 168, 182);
+}
+.btn1{
+    color: black;
+    background-color: rgb(170, 201, 197);
+    
+}
+.btn2{
+    color: black;
+    background-color: rgb(238, 195, 104);
+   
+    
+}
+.bt5{
+     
+    color: black;
+    background-color: yellowgreen;
+    margin-left: 45%;
+    margin-top: 30px;
+}
